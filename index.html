@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="app.css" />
+
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div id="mapid"></div>
+    <div class="container">
+      <h1 class="site-title">IP Address Tracker</h1>
+      <form method="GET" class="ip-form">
+        <input
+          class="input-ip"
+          type="text"
+          placeholder="Search for any IP address"
+        />
+        <button type="submit">
+          <img src="images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+
+      <div class="current-information">
+        <div class="ip-address">
+          <h3>IP Address</h3>
+          <p>192.212.174.101</p>
+        </div>
+        <div class="location">
+          <h3>location</h3>
+          <p>California, South San Gabriel</p>
+        </div>
+        <div class="timezone">
+          <h3>timezone</h3>
+          <p>UTC-07:00</p>
+        </div>
+        <div class="isp">
+          <h3>isp</h3>
+          <p>Southern California Edison</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

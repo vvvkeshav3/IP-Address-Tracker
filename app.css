@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background: url('images/pattern-bg.png') no-repeat;
+  background-size: cover;
+}
+
+/* *******************
+    Typography
+    ************* */
+.site-title {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.current-information div {
+  text-align: center;
+  padding: 0;
+  border-right: 1px solid lightgray;
+}
+
+.current-information h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(0, 0%, 59%);
+  padding: 0;
+  font-size: 0.5rem;
+}
+
+/* *******************
+    Layout
+    ************* */
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.ip-form {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.input-ip {
+  width: 70%;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 1em;
+  height: 50px;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button {
+  max-width: 70px;
+  background-color: black;
+  border: none;
+  outline: none;
+  height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border-radius: 0 15px 15px 0;
+}
+
+.current-information {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  background: white;
+  margin: 2em auto;
+  border-radius: 15px;
+  padding: 0.5em 0;
+}
+
+.current-information p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+#mapid {
+  height: 500px;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.leaflet-control-container {
+  position: absolute;
+  top: 150px;
+}
+
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 2rem;
+  }
+  .current-information {
+    flex-direction: row;
+  }
+  .current-information div {
+    flex: 25% 1;
+    margin: .75em 0;
+    padding: .25em 0.5em;
+  }
+  .current-information p {
+    font-size: 1.2rem;
+  }
+  .current-information h3 {
+    font-size: 0.7rem;
+  }
+  .leaflet-control-container {
+    top: 100px;
+  }
+}
